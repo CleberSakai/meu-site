@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: #ecdfcc;
+}
+
+/* Estilo do corpo */
+body {
+  background-color: #1e201e;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Estilo do cabeçalho */
+.header {
+  min-height: auto;
+  min-width: 100%;
+  max-width: auto;
+  position: fixed;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #697565;
+}
+
+.header > a {
+  text-decoration: none;
+  font-size: 20px;
+  padding: 20px;
+}
+
+/* Estilo da seção 'Sobre Mim' */
+.sobre-mim {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* Alinha o texto e a foto horizontalmente */
+  align-items: center; /* Alinha verticalmente ao centro */
+  padding: 0 150px;
+}
+
+.text-content {
+  flex: 1; /* Limita a largura do texto */
+  text-align: justify;
+  max-width: 700px;
+  min-width: auto;
+}
+
+.texto-escuro {
+  margin-top: 20px;
+  font-size: 25px;
+  color: #1e201e;
+}
+
+.texto {
+  padding-bottom: 20px;
+  letter-spacing: 1.5px;
+  line-height: 1.5;
+}
+
+.foto-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.foto {
+  max-width: 50%;
+  border-radius: 28% 72% 63% 37% / 55% 31% 69% 45%;
+}
+
+.formacao {
+  padding-top: 20px;
+  text-align: center;
+  min-height: 25vh;
+  width: 100%;
+  max-height: auto;
+  background-color: #697565; /* Cor de fundo para visualização */
+}
+
+.portifolio {
+  background-color: #ecdfcc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 115vh;
+  max-width: auto;
+  gap: 20px;
+  margin-bottom: 60px;
+}
+
+.portifolio-content {
+  border: 2px solid #697565;
+  padding: 35px 20px 25px 20px;
+  max-width: 80%;
+  background-color: #1e201e;
+}
+
+.contato {
+  display: flex;
+  align-items: center;
+  min-height: 60vh;
+  max-width: auto;
+  margin-left: 30px;
+}
+
+form {
+  width: 50%;
+}
+
+.nome,
+.email {
+  margin-bottom: 30px;
+  height: 30px;
+  width: 100%;
+}
+
+.img-contato {
+  width: 50%;
+  max-height: auto;
+}
+
+.submit-button {
+  color: #ecdfcc;
+  padding: 0.5rem;
+  border: solid 2px #697565;
+  background-color: #1e201e;
+  border-radius: 10%;
+}
+
+.mensagem {
+  width: 100%;
+  height: 300px;
+}
+
+@media (max-width: 1650px) {
+  .text-content {
+    text-align: justify;
+    min-width: auto;
+  }
+
+  .foto {
+    max-width: 40%;
+    border-radius: 28% 72% 63% 37% / 55% 31% 69% 45%;
+  }
+
+  .sobre-mim {
+    flex-direction: column-reverse;
+    padding: 100px 20px 0px 20px;
+  }
+
+  .contato {
+    flex-direction: column;
+  }
+
+  .portifolio {
+    padding-bottom: 20px;
+  }
+}
